@@ -1,10 +1,47 @@
 <!doctype html>
 <html>
   <head>
-  <title>fyff!</title>
+    <meta charset="utf-8"/>
+    <title>CV</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic" rel="stylesheet" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <style>
+      html {font-family: "Source Sans Pro";}
+      body {margin-top: 1em;}
+      a {color: inherit;text-decoration: none; border-bottom: dotted 1px #777;}
+      a:hover {color: #e84e1b; text-decoration: none; border-bottom: solid 1px #e84e1b;}
+      strong {color: #e84e1b;}
+      @media print {a {border-bottom: none;}}
+      .bubble {background: #e84e1b; font-style: italic; font-size: 300%; display: inline-block; padding: .5em 1em; font-weight: 300; position: relative;}
+      @media (max-width: 767px){ .bubble.visible-xs {display: inline-block!important;}}
+      .bubble:before {content: ' '; position: absolute; width: 0; height: 0; left: 2em; top: 2.2em; border-style: solid; border-width: .4em .4em 0 .4em; border-color: #e84e1b transparent transparent transparent;}
+    </style>
   </head>
   <body>
-  hello world
-  </body>
+    <div class="container">
+      <div class="row" style="position:relative">
+        <div class="col-lg-8 col-md-8 col-sm-8 hidden-xs" style="position: absolute; bottom:0;">
 
+          E-Mail: <a href="mailto:franziska.fried@googlemail.com">Franziska.Fried@googlemail.com</a><br/>
+          <a href="portfolio.pdf">&gt;&gt;Portfolio</a>
+
+        </div>
+        <div class="col-lg-offset-8 col-lg-2 col-md-offset-8 col-md-2 col-sm-offset-8 col-sm-2 col-xs-6">
+          <div class="hidden-xs pull-right bubble">Hi!</div>
+          <div class="visible-xs bubble">Hi!</div>
+          <div class="visible-xs" style="top: 10em; position:relative">
+
+            E-Mail: <a href="mailto:franziska.fried@googlemail.com">Franziska.Fried@googlemail.com</a><br/>
+            <a href="portfolio.pdf">&gt;&gt;Portfolio</a>
+
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6"><img src="franzi.svg" class="pull-right img-responsive"/></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
